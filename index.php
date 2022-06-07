@@ -12,7 +12,7 @@ Alcuni prodotti es. antipulci avranno la caratteristica che saranno disponibili 
 require_once __DIR__.'/Classes/User.php';
 require_once __DIR__.'/Classes/Product.php';
 require_once __DIR__.'/Classes/Registered.php';
-require_once __DIR__.'/Classes/CreditCard.php';
+
 
 //Lista prodotti
 
@@ -41,14 +41,16 @@ $products = [
 
 //Utenti
 
-$user1 = new User('Matteo', 'Rossi', 'mrossi@outlook.com');
-$user2 = new User('John', 'Wick', 'johnwick@outlook.com');
+$user1 = new User('Matteo', 'Rossi', 'mrossi@outlook.com', 12345678, '12/2028');
+$user2 = new User('John', 'Wick', 'johnwick@outlook.com', 12345678, '12/2028');
 
 //Utenti registrati
 
-$registeredUser1 = new Registered('Flavia', 'Bianchi', 'fbianchi@gmail.com');
-$registeredUser2 = new Registered('Denzel', 'Washington', 'dwashington@gmail.com');
+$registeredUser1 = new Registered('Flavia', 'Bianchi', 'fbianchi@gmail.com', 12345678, '12/2028');
+$registeredUser2 = new Registered('Denzel', 'Washington', 'dwashington@gmail.com', 12345678, '12/2028');
 
+var_dump($user1);
+var_dump($registeredUser2); 
 
 //
 ?>
