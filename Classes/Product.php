@@ -10,5 +10,24 @@
             $this->price = $price;
             $this->price = $description;
         }
+
+        public function setType($type){
+            $this->type = $type;
+        }
+        public function getType(){
+            return $this->type;
+        }
+        public function setPrice($price){
+            $this->price = $price;
+        }
+        public function getPrice(){
+            return $this->price;
+        }
+        public function setDescription($description){
+            $this->description = $description;
+        }
+        public function getDescription(){
+            return $this->description;
+        }
     }
 ?>

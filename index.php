@@ -33,7 +33,10 @@ $products = [
         'price' => '25',
         'description' => 'Lettiera agglomerante Classic a base di granulato naturale, assorbe in fretta ed è poco polverosa.',
     ],
-]
+];
+
+// $user = new User('Matteo', 'Rossi', 'mrossi@outlook.com');
+// $registeredUser = new Registered('Flavia', 'Bianchi', 'fbianchi@gmail.com');
 
 ?>
 
@@ -57,18 +60,20 @@ $products = [
 <h1>I nostri prodotti per animali:</h1>
 
 
-<ul>
-    <li>
 <?php foreach ($products as $key => $value) {
 
 $product = new Product($value['type'],$value['price'],$value['description'],);
-var_dump($product);
+// var_dump($product);
+
+
+echo '<div>
+<h2>' .$product->getType().'</h2>
+<h5>Prezzo: '.$product->getPrice().'</h5>
+<h5>Descrizione: '  .$product->getDescription().'</h5>
+</div>';
 
 }
 ?>
-</li>
-
-    </ul>
 
 
 
