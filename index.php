@@ -9,7 +9,8 @@ Alcuni prodotti es. antipulci avranno la caratteristica che saranno disponibili 
 
 <?php
 
-require_once __DIR__.'/Classes/User.php'
+require_once __DIR__.'/Classes/User.php';
+require_once __DIR__.'/Classes/Product.php';
 
 
 ?>
@@ -31,7 +32,7 @@ require_once __DIR__.'/Classes/User.php'
     </header>
 
     <main>
-
+<h1>I nostri prodotti per animali:</h1>
     </main>
 </body>
 </html> 

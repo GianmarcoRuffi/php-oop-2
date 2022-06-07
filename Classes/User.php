@@ -24,6 +24,9 @@ class User {
         return $this->surname;
     }
     public function setEmail($_email){
+        if(!strpos($_email,'@')){
+            throw new Exception("Inserire una email valida");
+          } 
         $this->email = $_email;
     }
     public function getEmail(){
