@@ -12,6 +12,9 @@ Alcuni prodotti es. antipulci avranno la caratteristica che saranno disponibili 
 require_once __DIR__.'/Classes/User.php';
 require_once __DIR__.'/Classes/Product.php';
 require_once __DIR__.'/Classes/Registered.php';
+require_once __DIR__.'/Classes/CreditCard.php';
+
+//Lista prodotti
 
 $products = [
     [
@@ -36,9 +39,18 @@ $products = [
     ],
 ];
 
-$user = new User('Matteo', 'Rossi', 'mrossi@outlook.com');
-$registeredUser = new Registered('Flavia', 'Bianchi', 'fbianchi@gmail.com');
+//Utenti
 
+$user1 = new User('Matteo', 'Rossi', 'mrossi@outlook.com');
+$user2 = new User('John', 'Wick', 'johnwick@outlook.com');
+
+//Utenti registrati
+
+$registeredUser1 = new Registered('Flavia', 'Bianchi', 'fbianchi@gmail.com');
+$registeredUser2 = new Registered('Denzel', 'Washington', 'dwashington@gmail.com');
+
+
+//
 ?>
 
 <!DOCTYPE html>
@@ -58,7 +70,7 @@ $registeredUser = new Registered('Flavia', 'Bianchi', 'fbianchi@gmail.com');
     </header>
 
     <main>
-<h1>I nostri prodotti per animali:</h1>
+<h1>Prodotti per animali:</h1>
 
 
 <?php foreach ($products as $key => $value) {
