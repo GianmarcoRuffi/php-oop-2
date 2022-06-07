@@ -8,7 +8,7 @@
         {
             $this->type = $type;
             $this->price = $price;
-            $this->price = $description;
+            $this->description = $description;
         }
 
         public function setType($type){

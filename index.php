@@ -38,7 +38,6 @@ $products = [
 
 $user = new User('Matteo', 'Rossi', 'mrossi@outlook.com');
 $registeredUser = new Registered('Flavia', 'Bianchi', 'fbianchi@gmail.com');
-var_dump($products);
 
 ?>
 
