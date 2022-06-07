@@ -11,32 +11,34 @@ Alcuni prodotti es. antipulci avranno la caratteristica che saranno disponibili 
 
 require_once __DIR__.'/Classes/User.php';
 require_once __DIR__.'/Classes/Product.php';
+require_once __DIR__.'/Classes/Registered.php';
 
 $products = [
     [
         'type' => 'Crocchette per Gatti',
-        'price' => '5',
+        'price' => 5,
         'description' => 'Crocchette per gatti ricche di proteine!',
     ],
     [
         'type' => 'Tiragraffi per gatti',
-        'price' => '50',
+        'price' => 50,
         'description' => 'I gatti hanno bisogno di affilare gli artigli! La miglior soluzione è scegliere per il tuo piccolo felino il giusto tiragraffi, su cui potrà sfogare il suo istinto, allungando la vita ai tuoi arredi!',
     ],
     [
         'type' => 'Doppia Ciotola',
-        'price' => '10',
+        'price' => 10,
         'description' => 'Doppia ciotola dotata di supporto metallico rialzato, con piedini in gomma, in ceramica lavabili in lavastoviglie.',
     ],
     [
         'type' => 'Lettiera Agglomerante',
-        'price' => '25',
+        'price' => 25,
         'description' => 'Lettiera agglomerante Classic a base di granulato naturale, assorbe in fretta ed è poco polverosa.',
     ],
 ];
 
-// $user = new User('Matteo', 'Rossi', 'mrossi@outlook.com');
-// $registeredUser = new Registered('Flavia', 'Bianchi', 'fbianchi@gmail.com');
+$user = new User('Matteo', 'Rossi', 'mrossi@outlook.com');
+$registeredUser = new Registered('Flavia', 'Bianchi', 'fbianchi@gmail.com');
+var_dump($products);
 
 ?>
 
@@ -62,14 +64,12 @@ $products = [
 
 <?php foreach ($products as $key => $value) {
 
-$product = new Product($value['type'],$value['price'],$value['description'],);
-// var_dump($product);
-
+$product = new Product($value['type'], $value['price'], $value['description']);
 
 echo '<div>
 <h2>' .$product->getType().'</h2>
 <h5>Prezzo: '.$product->getPrice().'</h5>
-<h5>Descrizione: '  .$product->getDescription().'</h5>
+<h5>Descrizione: '.$product->getDescription().'</h5>
 </div>';
 
 }

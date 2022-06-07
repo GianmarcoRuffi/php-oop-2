@@ -17,13 +17,13 @@
         public function getType(){
             return $this->type;
         }
-        public function setPrice($price){
+        public function setPrice($_price){
             $this->price = $price;
         }
         public function getPrice(){
             return $this->price;
         }
-        public function setDescription($description){
+        public function setDescription($_description){
             $this->description = $description;
         }
         public function getDescription(){
