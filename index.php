@@ -41,15 +41,17 @@ $products = [
 
 //Utenti
 
-$user1 = new User('Matteo', 'Rossi', 'mrossi@outlook.com', 12345678, '12/2028');
-$user2 = new User('John', 'Wick', 'johnwick@outlook.com', 12345678, '12/2028');
+$user1 = new User('Matteo', 'Rossi', 'mrossi@outlook.com', 12345678, '12/2026');
+$user2 = new User('John', 'Wick', 'johnwick@outlook.com', 826518926, '02/2022');
 
 //Utenti registrati
 
-$registeredUser1 = new Registered('Flavia', 'Bianchi', 'fbianchi@gmail.com', 12345678, '12/2028');
-$registeredUser2 = new Registered('Denzel', 'Washington', 'dwashington@gmail.com', 12345678, '12/2028');
+$registeredUser1 = new Registered('Flavia', 'Bianchi', 'fbianchi@gmail.com', 333728200, '10/2024');
+$registeredUser2 = new Registered('Denzel', 'Washington', 'dwashington@gmail.com', 426173524, '08/2023');
 
 var_dump($user1);
+var_dump($user2);
+var_dump($registeredUser1); 
 var_dump($registeredUser2); 
 
 //
